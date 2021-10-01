@@ -45,20 +45,37 @@ public class gugudan {
 //        System.out.println(result);
 //        result = 4 * 9;
 //        System.out.println(result);
-        System.out.println("구구단 중 출력할 단은? : ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println(number * 1);
-        System.out.println(number * 2);
-        System.out.println(number * 3);
-        System.out.println(number * 4);
-        System.out.println(number * 5);
-        System.out.println(number * 6);
-        System.out.println(number * 7);
-        System.out.println(number * 8);
-        System.out.println(number * 9);
 
+        // 입력받아서 구구단 출력
+//        System.out.println("구구단 중 출력할 단은? : ");
+//        Scanner scanner = new Scanner(System.in);
+//        int number = scanner.nextInt();
+//        System.out.println(number * 1);
+//        System.out.println(number * 2);
+//        System.out.println(number * 3);
+//        System.out.println(number * 4);
+//        System.out.println(number * 5);
+//        System.out.println(number * 6);
+//        System.out.println(number * 7);
+//        System.out.println(number * 8);
+//        System.out.println(number * 9);
 
+        // while 반복문 활용
+        int i = 1;
+        while (i < 10) {
+            int j = 1;
+            while (j < 10) {
+                System.out.println(i * j);
+                j++;
+            }
+            i++;
+        }
 
+        // for 반복문 활용
+//        for (int i = 1; i < 10; i++) {
+//            for (int j = 1; j < 10; j++) {
+//                System.out.println(i * j);
+//            }
+//        }
     }
 }
