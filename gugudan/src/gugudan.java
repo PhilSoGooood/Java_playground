@@ -61,15 +61,15 @@ public class gugudan {
 //        System.out.println(number * 9);
 
         // while 반복문 활용
-        int i = 1;
-        while (i < 10) {
-            int j = 1;
-            while (j < 10) {
-                System.out.println(i * j);
-                j++;
-            }
-            i++;
-        }
+//        int i = 1;
+//        while (i < 10) {
+//            int j = 1;
+//            while (j < 10) {
+//                System.out.println(i * j);
+//                j++;
+//            }
+//            i++;
+//        }
 
         // for 반복문 활용
 //        for (int i = 1; i < 10; i++) {
@@ -77,5 +77,21 @@ public class gugudan {
 //                System.out.println(i * j);
 //            }
 //        }
+
+        // 입력문 및 조건문 활용 8단~9단
+        System.out.println("구구단 중 출력할 단은? : ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println("number : "+ number);
+
+        if (number <2 ) {
+            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+        } else if (number > 9 ) {
+            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+        } else {
+            for (int i = 1; i < 10; i++) {
+                System.out.println(number * i);
+            }
+        }
     }
 }
