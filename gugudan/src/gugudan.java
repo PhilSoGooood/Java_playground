@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class gugudan {
     public static int[] calculate(int times) {
         int[] result = new int[9];
