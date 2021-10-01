@@ -1,6 +1,15 @@
 import java.util.Scanner;
 public class gugudan {
     public static void main(String[] args) {
+        //배열 활용 2단 구현
+        int[] result;
+        result = new int[9];
+        for(int i = 0; i < result.length; i++) {
+                result[i] = (i+1) * 2;
+        }
+        for (int i=0;i < result.length; i++) {
+            System.out.println(result[i]);
+        }
         //2단
 //        System.out.println("2단");
 //        System.out.println(2 * 1);
@@ -78,20 +87,20 @@ public class gugudan {
 //            }
 //        }
 
-        // 입력문 및 조건문 활용 8단~9단
-        System.out.println("구구단 중 출력할 단은? : ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println("number : "+ number);
-
-        if (number <2 ) {
-            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
-        } else if (number > 9 ) {
-            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
-        } else {
-            for (int i = 1; i < 10; i++) {
-                System.out.println(number * i);
-            }
-        }
+//        // 입력문 및 조건문 활용 8단~9단
+//        System.out.println("구구단 중 출력할 단은? : ");
+//        Scanner scanner = new Scanner(System.in);
+//        int number = scanner.nextInt();
+//        System.out.println("사용자가 입력한 값 : "+ number);
+//
+//        if (number <2 ) {
+//            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+//        } else if (number > 9 ) {
+//            System.out.println("2이상, 9이하의 값만 입력할 수 있습니다.");
+//        } else {
+//            for (int i = 1; i < 10; i++) {
+//                System.out.println(number * i);
+//            }
+//        }
     }
 }
