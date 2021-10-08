@@ -1,4 +1,4 @@
-public class gugudan {
+public class Gugudan {
     public static int[] calculate(int times) {
         int[] result = new int[9];
 

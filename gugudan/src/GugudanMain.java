@@ -1,7 +1,7 @@
-public class gugudanMain {
+public class GugudanMain {
     public static void main(String[] args) {
         for (int j = 2; j < 10; j++) {
-            gugudan.print(gugudan.calculate(j));
+            Gugudan.print(Gugudan.calculate(j));
         }
     }
 }
